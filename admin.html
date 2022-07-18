@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.top-header{
+  width:100%;
+  height: 100px;
+
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+  color: #fff;
+}
+.nav links a{
+color: #fff;
+}
+.logo{
+  font-size: 32px;
+}
+.menu{
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+.menu li:hover{
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.35 ease;
+
+}
+.menu li{
+  padding: 5px 14px;
+  list-style: none;
+}
+p.pre-taxe {
+    font-size: 13px;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+h2.mid-heading {
+    font-size: 18px;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+a.button-rv {
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    font-size: 13px;
+    margin-left: 2%;
+    position: relative;
+    top: 5px;
+}
+.box-size{
+  box-sizing: border-box;
+  background-color: gray;
+  padding: 29%;
+  margin-top: 2%;
+  width: 27%;
+  margin-left: 2%;
+}
+h3.first-heading{
+  padding-left: 43%;
+  padding-top: 1%;
+}
+h3 .sub{
+  top:0;
+  margin-left: 0!important;
+  margin-bottom: 30px;
+  text-align: center;
+  position: initial!important;
+}
+p.first-taxe{
+  font-size: 12px;
+  width: 42%;
+  margin-left: 34%;
+  margin-top: 1%;
+}
+.footer-box{
+  background-color: gray;
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-informaction{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto 5px;
+
+}
+.submit-button {
+  text-decoration: none;
+    border: 1px solid blue;
+    position: relative;
+    margin-top: 0%;
+    margin-left: 3%;
+    font-size: 18px;
+    padding: 2px 35px 2px 35px;
+    color: #f9f9f9;
+    background-color: blue;
+}
+input#fname {
+    margin: auto 5px;
+}
+input#fname{
+  width: 100%;
+  height: 23px;
+}
+input[type=checkbox]{
+  display: none;
+}
+label.humburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+section.box-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.box{
+  width: 94%;
+    height: 177px;
+    background-color: #999;
+    margin: 10px;
+}
+
+p.sub-text {
+    position: relative;
+}
+.footer-taxe {
+    display: flex;
+}   
+
+@media only screen and (max-width: 767px) {
+ p .per-taxe{
+  width: 100%!important;
+ }
+ .menu{
+  display: none;
+  position: absolute;
+  background-color: teal;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+ }
+ .menu li+li{
+  margin-top: 12px;
+ }
+ input#fname {
+    display: block;
+}
+ 
+ label.humburger {
+  display: block;
+}
+ a .button-footer{
+margin: 0!important;
+ }
+ section .box-items{
+  flex-direction: none;
+ }
+ p.lorem-tex {
+    text-align: center;
+    font-size: 10px;
+}
+}
+</style>
+</head>
+<body>
+<div class="top-header">
+<nav class="navbar">
+  <div class="log">
+    Logo
+  </div>
+  <ul class="nav-links">
+    <input type="checkbox" id="checkbox-toggle"/>
+    <label for="checkbox-toggle" class="humburger">&#9776;</label>
+    <div class="menu">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Pricing</a>
+      </li>
+      <li>
+        <a href="#">content</a>
+      </li>
+    </div>
+  </ul>
+</nav>
+      <div style="background-color: gray; height:164px;">
+        <h2 class="mid-heading">We power ecommerce</h2>
+        <p class="pre-taxe">Save now at shopwebly many products.<br>
+          compare products.find easly easy acces
+        </p>
+        <p class="button-first">
+          <a href="#" class="button-rv">Learn more</a>
+        </p>
+      </div>  
+      <section class="box-items">
+        <div class="item">
+          <div class="box"></div>
+          <h3>Heading</h3>
+          <p class="lorem-tex">Lorem ipsum, dolor sit amet <br>consectetur adipisicing </p>
+        </div>
+        <div class="item">
+          <div class="box"></div>
+          <h3>Heading</h3>
+          <p class="lorem-tex">Lorem ipsum, dolor sit amet<br> consectetur adipisicing </p>
+        </div>
+        <div class="item">
+          <div class="box"></div>
+          <h3>Heading</h3>
+          <p class="lorem-tex">Lorem ipsum, dolor sit amet<br> consectetur adipisicing </p>
+        </div>
+      </section>
+      <div class="footer-box">
+        <div class="footer-informaction">
+          <div class="footer-taxe">
+          <p class="sub-text">Subscribe</p> 
+            <input type="text" id="fname" name="fanme" value="taxe">
+          </div>
+          <div class="submit-button">
+         Sumit
+          </div>
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>
