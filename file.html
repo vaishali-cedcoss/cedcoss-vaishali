@@ -10,31 +10,13 @@
     display: flex;
     text-align: center;
 }
-.flex-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 400px;
-    margin-top: -200px;
-    margin-left: -200px;
-    border-radius: 2px;
-    box-shadow: 4px 8px 16px 0 rgb(0 0 0 / 10%);
-    overflow: hidden;
-    background: gray;
-    color: #333;
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+
 button#\ btn3 {
     position: absolute;
-    top: 50%;
-    left: 34%;
-    transform: translate(-50%, -50%);
-    width: 12%;
+    top: 48%;
+    left: 39%;
+    width: 6%;
     height: 50px;
-    
     background: #fff;
     display: flex;
     justify-content: space-around;
@@ -43,12 +25,10 @@ button#\ btn3 {
 }
 p#btn2 {
     position: absolute;
-    top: 46%;
+    top: 290px;
     left: 45%;
-    transform: translate(-50%, -50%);
-    width: 12%;
+    width: 7%;
     height: 48px;
-  
     background: #fff;
     display: flex;
     justify-content: space-around;
@@ -57,12 +37,10 @@ p#btn2 {
 }
 button#btn1 {
     position: absolute;
-    top: 50%;
-    left: 57%;
-    transform: translate(-50%, -50%);
-    width: 12%;
+    top: 48%;
+    left: 52%;
+    width: 6%;
     height: 50px;
-  
     background: #fff;
     display: flex;
     justify-content: space-around;
@@ -73,23 +51,23 @@ button#btn1 {
 <body>
  <div class="flex-container">
 <div class="item">
-  <button type="submit" onclick="decreament (btn2)" id="btn1"> -</button>
+  <button onclick="decreament ()"id="btn1">-</button>
 </div>
 <div class="item">
   <p id="btn2">3</p>
 </div>
 <div class="item">
-<button type="submit" onclick="Increament( btn1)" id=" btn3">+</button>
+<button onclick="Increament( )" id=" btn3">+</button>
 </div>
  </div>
   <script>
- function decreament (n1)
+ function decreament ()
 {
   var x= document .getElementById ('btn2').innerText;
   document.getElementById  ('btn2'). innerText=--x;
   
   }
-  function Increament (n2)
+  function Increament ()
 {
   var x= document .getElementById ('btn2').innerText;
   document.getElementById  ('btn2'). innerText=++x;
